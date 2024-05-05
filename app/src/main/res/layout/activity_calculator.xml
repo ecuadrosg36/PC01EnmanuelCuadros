@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_examen_parcial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/examen_parcial"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_operand1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/operand_1"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:autofillHints="operand1" />
+
+    <EditText
+        android:id="@+id/et_operand2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/operand_2"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:autofillHints="operand2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mas" />
+
+        <Button
+            android:id="@+id/btn_subtract"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/menos" />
+
+        <Button
+            android:id="@+id/btn_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_multiply"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/por" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/entre" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_calculate"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="" />
+
+</LinearLayout>

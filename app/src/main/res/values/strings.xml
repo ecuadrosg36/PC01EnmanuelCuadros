@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PC01EnmanuelCuadros</string>
+    <string name="examen_parcial">Exam Parcial</string>
+    <string name="open_calculator">Open Calculator</string>
+    <string name="operand_1">Operand 1</string>
+    <string name="operand_2">Operand 2</string>
+    <string name="calculate">Calculate</string>
+    <string name="mas">+</string>
+    <string name="menos">-</string>
+    <string name="por">*</string>
+    <string name="entre">/</string>
+</resources>
